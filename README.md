@@ -3,7 +3,7 @@
 CDN服务器正常运行时仅需要系统有500MB的内存。但是，程序第一次编译安装的时候需要1500MB左右的内存。若您的VPS内存不够，可以加一些Swap解决。
 该程序和其他面板（比如宝塔，cPanel, Directadmin）等不兼容。
 
-https://www.zhujizixun.com/wp-content/uploads/2020/07/atscdn.png
+![Image text](https://www.zhujizixun.com/wp-content/uploads/2020/07/atscdn.png)  
 
 ## 二、安装方法
 一键脚本使用非常简单！只需在对应的服务器执行下面的脚本就行了。
