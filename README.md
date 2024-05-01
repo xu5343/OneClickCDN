@@ -1,3 +1,24 @@
+# 一、系统要求
+目前支持Ubuntu 20.04 LTS, Debian 10, CentOS 7/8操作系统。
+CDN服务器正常运行时仅需要系统有500MB的内存。但是，程序第一次编译安装的时候需要1500MB左右的内存。若您的VPS内存不够，可以加一些Swap解决。
+该程序和其他面板（比如宝塔，cPanel, Directadmin）等不兼容。
+
+https://www.zhujizixun.com/wp-content/uploads/2020/07/atscdn.png
+
+## 二、安装方法
+一键脚本使用非常简单！只需在对应的服务器执行下面的脚本就行了。
+
+## 1、原版（英文界面）：
+```
+wget https://raw.githubusercontent.com/xu5343/OneClickCDN/master/OneClickCDN.sh && sudo bash OneClickCDN.sh
+```
+## 2、中文版：
+```
+wget https://raw.githubusercontent.com/xu5343/OneClickCDN/master/translation/translated_scripts/OneClickCDN_zh-CN.sh && sudo bash OneClickCDN_zh-CN.sh
+```
+第一次运行时，程序会提示自动编译安装Traffic Server.  安装完毕后，程序会引导新建CDN网站，自动签发SSL等等。您需要将您网站的域名设置A记录解析到这台VPS的IP地址上。您也可以随时重新运行该脚本，用来管理您的服务器上部署的CDN网站，查看网站统计等等。
+
+---
 # OneClickCDN
 A one-click shell script to set up a CDN node for your websites.
 
