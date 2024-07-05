@@ -14,9 +14,10 @@
 
 #您可以在这里修改Traffic Server源码下载链接。
 #查看https://www.apache.org/dyn/closer.cgi/trafficserver获取最新版本链接。
+#https://dlcdn.apache.org/trafficserver/trafficserver-9.1.1.tar.bz2
 
-TS_DOWNLOAD_LINK="https://dlcdn.apache.org/trafficserver/trafficserver-9.2.4.tar.bz2"
-TS_VERSION="9.2.4"
+TS_DOWNLOAD_LINK="https://archive.apache.org/dist/trafficserver/trafficserver-9.1.1.tar.bz2"
+TS_VERSION="9.1.1"
 
 
 
