@@ -143,7 +143,7 @@ function install_TS
 	apt-get remove nginx apache -y
 	echo "安装依赖环境..."
 	apt-get update && apt-get upgrade -y
-	apt-get install wget curl tar certbot automake libtool pkg-config libmodule-install-perl gcc g++ libssl-dev tcl-dev libpcre3-dev libcap-dev libhwloc-dev libncurses5-dev libcurl4-openssl-dev flex autotools-dev bison debhelper dh-apparmor gettext intltool-debian libbison-dev libexpat1-dev libfl-dev libsigsegv2 libsqlite3-dev m4 po-debconf tcl8.6-dev zlib1g-dev -y
+	apt-get install wget curl tar certbot automake libtool pkg-config libmodule-install-perl gcc g++ libssl-dev tcl-dev libpcre3-dev libcap-dev libhwloc-dev libncurses5-dev libcurl4-openssl-dev flex autotools-dev bison debhelper dh-apparmor gettext intltool-debian libbison-dev libexpat1-dev libfl-dev libsigsegv2 libsqlite3-dev m4 po-debconf tcl8.6-dev zlib1g-dev luajit libluajit-5.1-dev -y
 	wget $TS_DOWNLOAD_LINK
 	tar xjf trafficserver-${TS_VERSION}.tar.bz2
 	rm -f trafficserver-${TS_VERSION}.tar.bz2
@@ -206,7 +206,7 @@ function install_TS_CentOS
 		yum install centos-release-scl -y
 		yum install devtoolset-8 -y
 		scl enable devtoolset-8
-		yum install wget curl tar openssl-devel pcre-devel tcl-devel gcc-c++ expat-devel libcap-devel hwloc ncurses-devel libcurl-devel pcre-devel tcl-devel expat-devel openssl-devel perl-ExtUtils-MakeMaker bzip2 -y
+		yum install wget curl tar openssl-devel pcre-devel tcl-devel gcc-c++ expat-devel libcap-devel hwloc ncurses-devel libcurl-devel pcre-devel tcl-devel expat-devel openssl-devel perl-ExtUtils-MakeMaker bzip2 luajit libluajit-5.1-dev -y
 		yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y
 		yum install certbot -y
 		source /opt/rh/devtoolset-8/enable
